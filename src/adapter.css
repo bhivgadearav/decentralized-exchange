@@ -1,0 +1,110 @@
+.wallet-adapter-button, .wallet-adapter-button-trigger{
+  height: 48px;
+  font-size: 16px;
+  background-color: #4F46E5;
+  color: rgb(255, 255, 255);
+  border-radius: 0.75rem;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 500;
+  width: 100%;
+  justify-content: center;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-top: 10px;
+}
+
+.wallet-adapter-button:not([disabled]):focus-visible {
+  outline-color: white;
+}
+
+.wallet-adapter-button:not([disabled]):hover {
+  background-color: black;
+  color: white;
+}
+
+.wallet-adapter-button[disabled] {
+  background: #404144;
+  color: #999;
+  cursor: not-allowed;
+  border: none;
+  line-height: normal;
+}
+
+.wallet-adapter-dropdown-list {
+  background: #ffffff;
+}
+
+.wallet-adapter-dropdown-list-item {
+  color: #000000;
+}
+
+.wallet-adapter-dropdown-list-item:not([disabled]):hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.wallet-adapter-dropdown {
+    width: 100%;
+}
+
+
+.wallet-adapter-modal-wrapper {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: unset;
+  border: 1px solid white;
+}
+
+.wallet-adapter-modal-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.wallet-adapter-modal-list .wallet-adapter-button:not([disabled]):hover {
+  background-color: white;
+  color: black;
+}
+
+.wallet-adapter-modal-button-close {
+  background-color: #ffffff;
+}
+
+.wallet-adapter-modal-button-close:hover {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+}
+
+.wallet-adapter-modal-button-close svg {
+  fill: #000000;
+}
+
+.wallet-adapter-modal-button-close:hover svg {
+  fill: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .wallet-adapter-button, .wallet-adapter-button-trigger, .wallet-adapter-dropdown {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px){
+  .wallet-adapter-button, .wallet-adapter-button-trigger, .wallet-adapter-dropdown {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wallet-adapter-button, .wallet-adapter-button-trigger, .wallet-adapter-dropdown {
+    width: 100%;
+    line-height: 10px;
+  }
+}
